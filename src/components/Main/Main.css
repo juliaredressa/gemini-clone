@@ -64,22 +64,23 @@
     right: 10px;
 }
 
-.main .card p{
-    color: #585858;
-    font-size: 17px;
+.main .card {
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.main .card:hover{
+.main .card:hover {
     background-color: #dfe4ea;
+    transform: translateY(-5px);
 }
 
-.main-bottom{
+.main-bottom {
     position: absolute;
     bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 100%;
     max-width: 900px;
     padding: 0px 20px;
-    margin: auto;
 }
 
 .main-bottom .search-box{
@@ -98,7 +99,7 @@
 }
 
 .search-box input{
-    flex: 1px;
+    flex: 1;
     background: transparent;
     border: none;
     outline: none;
